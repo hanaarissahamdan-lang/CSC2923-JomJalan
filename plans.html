@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Plans | JomJalan Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a class="logo-container" href="index.html">
+        <img src="images/logo.png" class="logo" alt="JomJalan Travel">
+        <span class="logo-text">JomJalan Travel</span>
+    </a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Popular Destinations</a>
+        <a href="packages.html">Travel Packages</a>
+        <a href="plans.html" aria-current="page">My Travel Plans</a>
+    </div>
+</nav>
+
+<main class="page">
+    <h2>My Travel Plans</h2>
+    <form id="planForm">
+        <label for="destination">Destination</label>
+        <input type="text" id="destination" placeholder="Destination" required>
+
+        <label for="date">Travel date</label>
+        <input type="date" id="date" required>
+
+        <label for="travellers">Number of travellers</label>
+        <input type="number" id="travellers" placeholder="Number of Travellers" min="1" required>
+
+        <label for="cost">Cost per traveller (RM)</label>
+        <input type="number" id="cost" placeholder="Cost Per Traveller (RM)" min="0" step="0.01" required>
+
+        <button type="submit">Add Plan</button>
+    </form>
+
+    <h3>Total Budget: RM <span id="totalBudget">0</span></h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Travellers</th>
+                <th>Cost per Traveller (RM)</th>
+                <th>Total Cost</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="plansBody"></tbody>
+    </table>
+</main>
+<script src="renderer.js"></script>
+</body>
+</html>

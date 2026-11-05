@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Destinations | JomJalan Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a class="logo-container" href="index.html">
+        <img src="images/logo.png" class="logo" alt="JomJalan Travel">
+        <span class="logo-text">JomJalan Travel</span>
+    </a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" aria-current="page">Popular Destinations</a>
+        <a href="packages.html">Travel Packages</a>
+        <a href="plans.html">My Travel Plans</a>
+    </div>
+</nav>
+
+<main class="page">
+    <h2>Popular Destinations</h2>
+    <div class="destination-grid">
+        <div class="destination-card" onclick="selectCountry('Japan')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('Japan')}">
+            <img src="images/japan.jpeg" alt="Japan">
+            <h3>Japan</h3>
+        </div>
+        <div class="destination-card" onclick="selectCountry('China')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('China')}">
+            <img src="images/china.jpeg" alt="China">
+            <h3>China</h3>
+        </div>
+        <div class="destination-card" onclick="selectCountry('Switzerland')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('Switzerland')}">
+            <img src="images/switzerland.jpeg" alt="Switzerland">
+            <h3>Switzerland</h3>
+        </div>
+        <div class="destination-card" onclick="selectCountry('Malaysia')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('Malaysia')}">
+            <img src="images/malaysia.jpeg" alt="Malaysia">
+            <h3>Malaysia</h3>
+        </div>
+        <div class="destination-card" onclick="selectCountry('South Korea')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('Malaysia')}">
+            <img src="images/southkorea.jpeg" alt="South Korea">
+            <h3>South Korea</h3>
+        </div>
+        <div class="destination-card" onclick="selectCountry('Thailand')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('Malaysia')}">
+            <img src="images/thailand.jpeg" alt="Thailand">
+            <h3>Thailand</h3>
+        </div>
+        <div class="destination-card" onclick="selectCountry('Italy')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('Malaysia')}">
+            <img src="images/italy.jpeg" alt="Italy">
+            <h3>Italy</h3>
+        </div>
+        <div class="destination-card" onclick="selectCountry('Mexico')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('Malaysia')}">
+            <img src="images/mexico.jpeg" alt="Mexico">
+            <h3>Mexico</h3>
+        </div>
+        <div class="destination-card" onclick="selectCountry('Egypt')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectCountry('Malaysia')}">
+            <img src="images/egypt.jpg" alt="Egypt">
+            <h3>Egypt</h3>
+        </div>
+    </div>
+</main>
+<script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JomJalan Smart Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <a class="logo-container" href="index.html">
+        <img src="images/logo.png" class="logo" alt="JomJalan Travel">
+        <span class="logo-text">
+            JomJalan Travel
+        </span>
+    </a>
+
+    <div class="nav-links">
+
+        <a href="index.html" aria-current="page">
+            Home
+        </a>
+
+        <a href="destinations.html">
+            Popular Destinations
+        </a>
+
+        <a href="packages.html">
+            Travel Packages
+        </a>
+
+        <a href="plans.html">
+            My Travel Plans
+        </a>
+
+    </div>
+
+</nav>
+
+<section id="home" class="page">
+
+    <section class="hero">
+    <div class="hero-overlay">
+        <h1>Where are we going next? Plan your trip well!</h1>
+
+            <p>
+                Discover destinations, weather updates,
+                travel information and currency exchange rates
+                to plan your next adventure.
+            </p>
+        </div>
+    </section><br>
+
+    <label>Select Country:</label>
+
+    <select id="countrySelect">
+
+        <optgroup label="Asia">
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="South Korea">South Korea</option>
+        </optgroup>
+
+        <optgroup label="Europe">
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="Switzerland">Switzerland</option>
+        </optgroup>
+
+        <optgroup label="North America">
+            <option value="United States">
+                United States of America
+            </option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+        </optgroup>
+
+        <optgroup label="Africa">
+            <option value="Egypt">Egypt</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Kenya">Kenya</option>
+        </optgroup>
+
+        <optgroup label="Oceania">
+            <option value="Australia">Australia</option>
+            <option value="New Zealand">New Zealand</option>
+        </optgroup>
+
+    </select>
+
+    <button id="getInfoBtn">
+        Get Travel Info
+    </button>
+
+    <div id="countryFlag"></div>
+
+<div class="info-grid">
+
+    <div class="card country-card">
+
+        <h3>Country Information</h3>
+
+        <div id="countryInfo">
+            Country information will appear here.
+        </div>
+
+    </div>
+
+    <div class="card weather-card">
+
+        <h3>Weather Information</h3>
+
+        <p id="weatherDetails">
+            Weather data will appear here.
+        </p>
+
+    </div>
+
+    <div class="card currency-card">
+
+        <h3>Currency Converter</h3>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Enter Amount (MYR)"
+        >
+
+        <button id="convertBtn">
+            Convert
+        </button>
+
+        <p id="conversionResult">
+            Conversion result appears here.
+        </p>
+
+    </div>
+
+</div>
+
+    <div class="card">
+        <h3>Activity you can do</h3>
+
+    <img
+        id="activityImage"
+        src=""
+        class="activity-image">
+
+    <p id="activitySuggestion">
+        Suggestions will appear here.
+    </p>
+    </div>
+
+</section>
+
+<script src="renderer.js"></script>
+
+</body>
+
+</html>
